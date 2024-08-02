@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 1.45em;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+th {
+    background-color: rgb(30, 30, 55);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(21, 21, 21);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(35, 35, 35);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+    padding: 15px;
+}
+
+.navbar a {
+    color: grey;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.main-content {
+    margin: 12% 10% 4% 10%;
+    text-align: left;
+    font-size: 1.20em;
+}
+
+.container, .container-medium, .login-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid rgb(36, 36, 36);
+    padding: 20px;
+}
+
+.container button, .login-container button {
+    float: right;
+    padding: 8px 15px;
+    color: white;
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.container select {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    text-align: center;
+    font-size: 9pt;
+}
+
+@media (max-width: 768px) {
+    div.event {
+        width: 100%;
+    }
+}
